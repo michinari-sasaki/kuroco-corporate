@@ -19,13 +19,13 @@ export type PageInfo = {
 };
 
 export async function getArticles(): Promise<{ list: Article[]; pageInfo: PageInfo }> {
-  const res = await fetch(`${BASE}/blog`, { headers, cache: "no-store" });
+  const res = await fetch(`${BASE}/blog`, { headers });
   if (!res.ok) throw new Error("Failed to fetch articles");
   return res.json();
 }
 
 export async function getArticle(id: number): Promise<Article | null> {
-  const res = await fetch(`${BASE}/blog?topics_id=${id}`, { headers, cache: "no-store" });
+  const res = await fetch(`${BASE}/blog?topics_id=${id}`, { headers });
   if (!res.ok) throw new Error("Failed to fetch article");
   const data = await res.json();
   return data.list?.[0] ?? null;
