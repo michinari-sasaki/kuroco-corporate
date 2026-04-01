@@ -1,0 +1,56 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.count {
+  font-size: 0.82rem;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.list {
+  list-style: none;
+  border-top: 1px solid #eee;
+}
+
+.item a {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #eee;
+  transition: opacity 0.15s;
+}
+
+.item a:hover {
+  opacity: 0.65;
+}
+
+.date {
+  font-size: 0.82rem;
+  color: #aaa;
+  white-space: nowrap;
+  padding-top: 2px;
+  min-width: 96px;
+}
+
+.subject {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.empty {
+  color: #aaa;
+  font-size: 0.9rem;
+  padding: 40px 0;
+}

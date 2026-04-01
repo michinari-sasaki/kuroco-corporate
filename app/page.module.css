@@ -1,0 +1,183 @@
+/* Hero */
+.hero {
+  background: #111;
+  color: #fff;
+  padding: 100px 24px;
+}
+
+.heroInner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heroLabel {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.heroText {
+  color: #bbb;
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.heroBtn {
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.heroBtn:hover {
+  opacity: 0.85;
+}
+
+/* Section共通 */
+.section {
+  padding: 80px 24px;
+}
+
+.sectionGray {
+  padding: 80px 24px;
+  background: #f7f7f7;
+}
+
+.sectionInner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.sectionMore {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.sectionMore:hover {
+  color: #111;
+}
+
+/* 会社概要テーブル */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.tableLabel {
+  padding: 16px 24px 16px 0;
+  font-weight: 500;
+  color: #888;
+  width: 140px;
+  vertical-align: top;
+}
+
+.tableValue {
+  padding: 16px 0;
+  color: #222;
+}
+
+/* お知らせリスト */
+.newsList {
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.newsItem a {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 24px;
+  transition: background 0.15s;
+}
+
+.newsItem a:hover {
+  background: #f7f7f7;
+}
+
+.newsDate {
+  font-size: 0.82rem;
+  color: #aaa;
+  white-space: nowrap;
+  padding-top: 2px;
+  min-width: 96px;
+}
+
+.newsTitle {
+  font-size: 0.95rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.empty {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* お問い合わせ */
+.contactSection {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.contactInner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contactText {
+  color: #777;
+  margin-bottom: 32px;
+}
+
+.contactBtn {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.contactBtn:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,47 @@
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.back {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 32px;
+  transition: color 0.15s;
+}
+
+.back:hover {
+  color: #555;
+}
+
+.date {
+  font-size: 0.82rem;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #333;
+}
+
+.body p { margin-bottom: 1.2em; }
+.body h2 { font-size: 1.3rem; font-weight: 700; margin: 2em 0 0.8em; }
+.body h3 { font-size: 1.1rem; font-weight: 700; margin: 1.8em 0 0.6em; }
+.body ul, .body ol { padding-left: 1.5em; margin-bottom: 1.2em; }
+.body li { margin-bottom: 0.4em; }
+.body a { color: #2a6ab0; text-decoration: underline; }
+.body strong { font-weight: 700; }
