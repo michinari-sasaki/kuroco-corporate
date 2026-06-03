@@ -1,34 +1,23 @@
+import type { BlogListResponse, Article, PageInfo } from "./kuroco-types";
+
 const BASE = process.env.KUROCO_API_BASE!;
 const TOKEN = process.env.KUROCO_API_TOKEN!;
 
 const headers = { "X-RCMS-API-ACCESS-TOKEN": TOKEN };
 
-export type Article = {
-  topics_id: number;
-  subject: string;
-  contents: string;
-  ymd: string;
-  group_nm: string;
-};
+export type { Article, PageInfo };
 
-export type PageInfo = {
-  totalCnt: number;
-  perPage: number;
-  totalPageCnt: number;
-  pageNo: number;
-};
-
-export async function getArticles(): Promise<{ list: Article[]; pageInfo: PageInfo }> {
+export async function getArticles(): Promise<BlogListResponse> {
   const res = await fetch(`${BASE}/blog`, { headers });
-  if (!res.ok) throw new Error("Failed to fetch articles");
-  return res.json();
+  if (!res.ok) throw new Error(`Failed to fetch articles: ${res.status}`);
+  return res.json() as Promise<BlogListResponse>;
 }
 
 export async function getArticle(id: number): Promise<Article | null> {
   const res = await fetch(`${BASE}/blog?topics_id=${id}`, { headers });
-  if (!res.ok) throw new Error("Failed to fetch article");
-  const data = await res.json();
-  return data.list?.[0] ?? null;
+  if (!res.ok) throw new Error(`Failed to fetch article: ${res.status}`);
+  const data = await res.json() as BlogListResponse;
+  return data.list[0] ?? null;
 }
 
 export async function getAllArticleIds(): Promise<number[]> {
